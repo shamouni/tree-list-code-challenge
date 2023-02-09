@@ -1,0 +1,43 @@
+body {
+  font-family: tahoma;
+}
+li ul {
+  display: none;
+}
+li.show > ul {
+  display: block
+}
+h5, p {
+  margin: 0;
+}
+li.has-child h5, li.has-child p {
+  cursor: pointer;
+}
+h5 {
+  font-size: 1em;
+}
+p {
+  font-size: 0.8em;
+  color: #777;
+  padding-left: 2em;
+}
+li {
+  margin-top: 5px;
+  list-style: none;
+}
+
+h5::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  vertical-align: middle;
+  margin-right: .5em;
+}
+li.has-child.hide > * > h5::before {
+  background-image: url('../images/plus.png');
+}
+li.has-child.show > * > h5::before {
+  background-image: url('../images/minus.png');
+}
