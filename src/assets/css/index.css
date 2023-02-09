@@ -10,7 +10,8 @@ li.show > ul {
 h5, p {
   margin: 0;
 }
-li.has-child h5, li.has-child p {
+li.has-child > * > h5, 
+li.has-child > * > p {
   cursor: pointer;
 }
 h5 {
@@ -31,7 +32,6 @@ h5::before {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-size: 16px 16px;
   vertical-align: middle;
   margin-right: .5em;
 }
