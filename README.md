@@ -15,5 +15,3 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
